@@ -6,12 +6,7 @@ public class OddMain {
 		System.out.println("Введите целое число для проверки на нечетность:");
 		if (sc.hasNextInt()) {
 			int number = sc.nextInt();
-			boolean isOdd;
-			if (number % 2 == 1) {
-				isOdd = true;
-			} else {
-				isOdd = false;
-			}
+			boolean isOdd = (number % 2 == 1);
 			System.out.printf("Число %d %s", number, isOdd ? "нечетное" : "четное");
 		}
 	}
